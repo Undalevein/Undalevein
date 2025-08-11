@@ -13,17 +13,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.headerlink {
+a {
   font-weight: 500;
-  color: white;
+  color: #646cff;
   text-decoration: inherit;
 }
-.headerlink:hover {
-  color: orangered;
-}
-
-header {
-  font-size: large;
+a:hover {
+  color: #535bf2;
 }
 
 body {
@@ -39,14 +35,8 @@ h1 {
   line-height: 1.1;
 }
 
-#navigation {
-  display: flex;
-  height: 2em;
-  align-items: stretch;
-}
-
-#navigation button {
-  /* border-radius: 8px; */
+button {
+  border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -54,24 +44,16 @@ h1 {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: all 0.25s;
+  transition: border-color 0.25s;
   padding: 10px;
 }
-#navigation button:hover {
-  color: #f66904;
+button:hover {
   border-color: #f66904;
   border-width: 1px;
 }
-#navigation button:focus,
-#navigation button:focus-visible {
+button:focus,
+button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-.socials {
-  height: 2em;
-  padding: 0em;
-  will-change: filter;
-  transition: filter 300ms;
 }
 
 @media (prefers-color-scheme: light) {

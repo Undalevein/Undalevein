@@ -1,0 +1,10 @@
+header {
+  font-size: large;
+}
+
+.socials {
+  height: 2em;
+  padding: 0.3em;
+  will-change: filter;
+  transition: filter 300ms;
+}
