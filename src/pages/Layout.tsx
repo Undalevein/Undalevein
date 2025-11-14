@@ -7,6 +7,9 @@ export default function Layout( {} ) {
     <>
       <h1>Undalevein's Corner</h1>
       <nav id="navigation">
+        <Link to="/" className="headerlink">
+          <button>Home</button>
+        </Link>
         <Link to="/bio" className="headerlink">
           <button>Bio</button>
         </Link>

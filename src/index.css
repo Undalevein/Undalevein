@@ -27,9 +27,7 @@ header {
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
+  margin: 0em;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -39,23 +37,35 @@ h1 {
   line-height: 1.1;
 }
 
+#tangent {
+  font-size: 1em;
+  color: orangered;
+  padding-left: 1em;
+  padding-right: 5em;
+}
+
 #navigation {
   display: flex;
-  height: 2em;
+  flex-direction: row;
+  justify-content:flex-start;
   align-items: stretch;
+  background-color: #070707;
+  width:100%;
+  padding-left: 1em;
 }
 
 #navigation button {
   /* border-radius: 8px; */
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.6em;
+  height: 100%;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
+  text-align:center;
   transition: all 0.25s;
-  padding: 10px;
 }
 #navigation button:hover {
   color: #f66904;
@@ -69,6 +79,12 @@ h1 {
 
 .socials {
   height: 2em;
+  padding: 0em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.doc-img {
+  height: 20em;
   padding: 0em;
   will-change: filter;
   transition: filter 300ms;
