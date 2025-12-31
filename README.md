@@ -1,6 +1,7 @@
 # Undalevein's Corner
 
-Welcome to my portfolio :)
+Hello! Welcome to my portfolio, where I have many projects related to Speedrunning, Game Development, or Programming Languages, or something else entirely!
+
 
 <!--
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
