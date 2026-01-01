@@ -3,22 +3,22 @@ import gameFRTBTD from "../assets/from_red_to_blue.png";
 
 export default function Bio( {} ) {
   return <>
-    <h1>Who am I?</h1>
-    <body id="description">
+    <hgroup id="bio">
+      <h1>Who am I?</h1>
       <img src={profilePhoto} alt="Profile photo of Wesley Ng" className="doc-img"/>
       <p>
         Hello, I'm Wesley Ng, also referred to as Undalevein online. 
       </p>
-      <p id="tangent">
-        A bit of a side tangent but for both of my names, people struggled when trying to pronounce either of them, so let me explain.
+      <p className="tangent">
+      A bit of a side tangent but for both of my names, people struggled when trying to pronounce either of them, so let me explain.
       </p>
-      <p id="tangent">
+      <p className="tangent">
         For my first name, it's pronounced "whes-lee." 
         It does not have a "z" sound, and it does irritate me when people do that.
       </p>
-      <p id="tangent">For my last name, it's pronounced "-ing," like how people pronounce any present participle verbs including "running," "swimming," or "sewing." But "ng" is also fine, and in fact it's the actual pronunciation. I didn't realize that until my dad told me that.
+      <p className="tangent">For my last name, it's pronounced "-ing," like how people pronounce any present participle verbs including "running," "swimming," or "sewing." But "ng" is also fine, and in fact it's the actual pronunciation. I didn't realize that until my dad told me that.
       </p>
-      <p id="tangent">        
+      <p className="tangent">        
         Finally, my online name is pronounced "un-dahl'-ev'-in."
         People mispronounce the middle part, where they say "un-duh-lev-in."
       </p>
@@ -54,6 +54,6 @@ export default function Bio( {} ) {
           <a href="https://go.dev/">Go</a> is a cool language, but what the heck is their time formatting? Huh? Why does it need to be formatted as <code>"03:04:05"</code> instead of <code>"HH:mm:ss"</code> for 12-hour clocks?
         </li>
       </ul>
-    </body>
+    </hgroup>
   </>;
 }

@@ -1,3 +1,6 @@
+import React from "react";
+import {useState, useEffect} from "react";
+
 import profilePhoto from "../assets/profile_photo.jpg";
 import gameFRTBTD from "../assets/from_red_to_blue.png";
 import gameSokoball from "../assets/sokoball.png";
@@ -7,6 +10,9 @@ import nutcase from "../assets/nutcase.png";
 
 export default function Home( {} ) {
   return <>
+    <blockquote>
+      Coding has a human touch, because the programs we make are still broken, stupid, and dumb.
+    </blockquote>
     <h1>Welcome to my website!</h1>
     <h2>Games I have worked on</h2>
     <a href="https://undalevein.itch.io/eye-spy">

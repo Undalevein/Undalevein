@@ -3,12 +3,13 @@ import { createRoot } from "react-dom/client";
 import { supabase } from "./supabaseClient";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css";
-import Layout from "./pages/Layout";
+import Header from "./pages/Header";
+import Footer from "./pages/Footer";
 import Home from "./pages/Home";
 import Bio from "./pages/Bio";
 import Blog from "./pages/Blog";
 import Post from "./pages/Post";
-import Games from "./pages/Games";
+import { Games, GameRouters } from "./pages/Games";
 import Photography from "./pages/Photography";
 import Speedrunning from "./pages/Speedrunning";
 import Coding from "./pages/Coding";
@@ -29,21 +30,25 @@ export default function App() {
   }, [])
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="bio" element={<Bio />} />
-          <Route path="blog" element={<Blog />} />
-          <Route path="/post/:id" element={<Post />}/>
-          <Route path="games" element={<Games />} />
-          <Route path="photography" element={<Photography />} />
-          <Route path="speedrunning" element={<Speedrunning />} />
-          <Route path="coding" element={<Coding />} />
-          <Route path="*" element={<NoPage />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Header />}>
+            <Route index element={<Home />} />
+            <Route path="bio" element={<Bio />} />
+            <Route path="blog" element={<Blog />} />
+            <Route path="/post/:id" element={<Post />}/>
+            <Route path="games" element={<Games />} />
+              {GameRouters({})}
+            <Route path="photography" element={<Photography />} />
+            <Route path="speedrunning" element={<Speedrunning />} />
+            <Route path="coding" element={<Coding />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+      <Footer />
+    </>
   );
 }
 
