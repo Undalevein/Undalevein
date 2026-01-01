@@ -2,8 +2,8 @@ import profilePhoto from "../assets/profile_photo.jpg";
 import gameFRTBTD from "../assets/from_red_to_blue.png";
 
 export default function Bio( {} ) {
-  return <>
-    <hgroup id="bio">
+  return <main>
+    <hgroup className="bio">
       <h1>Who am I?</h1>
       <img src={profilePhoto} alt="Profile photo of Wesley Ng" className="doc-img"/>
       <p>
@@ -55,5 +55,5 @@ export default function Bio( {} ) {
         </li>
       </ul>
     </hgroup>
-  </>;
+  </main>;
 }
